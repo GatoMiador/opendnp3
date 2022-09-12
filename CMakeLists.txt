@@ -163,5 +163,9 @@ if(is_root)
     define_clang_tidy()
 endif()
 
+SET(CPACK_GENERATOR "DEB")
+SET(CPACK_DEBIAN_PACKAGE_MAINTAINER "Marcos Vicente Cruz <marcoscruz@sigmasysengenharia.com.br>") 
+set(CPACK_DEBIAN_PACKAGE_DEPENDS "libc6 (>= 2.27-3)")
+
 # Packaging
 include(CPack)
